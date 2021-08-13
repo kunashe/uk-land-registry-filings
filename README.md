@@ -17,4 +17,4 @@
 6. `pdftk registry.pdf burst`
 7. `rm registry.pdf`
 8. `ls -1 * .pdf > manifest.txt`
-9. `loop.sh manifest.txt |prarlle -j+8 --no-notice pdftotext -layout {} {}.txt`
+9. `loop.sh manifest.txt |prarllel -j+8 --no-notice pdftotext -layout {} {}.txt`
