@@ -114,9 +114,9 @@ if __name__ == "__main__":
             
     df = pd.DataFrame(rows)
     
-    for i,r in enumerate(df["entry"]):
+    for i,row in enumerate(df["entry"]):
         try:
-            if r == -1:
+            if row == "-1":
                 df.loc[i-1,"registration_date"] = f"{df['registration_date'][i-1]}  {df['registration_date'][i]}"
                 df.loc[i-1,"lease_term_date"] = f"{df['lease_term_date'][i-1]} {df['lease_term_date'][i]}"
         except Exception as e:
