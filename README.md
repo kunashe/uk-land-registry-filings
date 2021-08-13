@@ -1,15 +1,13 @@
-##UK Land Registry Filings
+# UK Land Registry Filings
 
-
-
-# Dependencies
+## Dependencies
 
 1.  Python 3.7.6
 2. pdftk
 3. qpdf
 4. pdftotext
 
-# Prep
+## Prep
 
 1. `mkdir ow`
 2. `cd ow`
