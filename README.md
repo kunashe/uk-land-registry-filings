@@ -15,3 +15,6 @@
 4. `cp land-registry.pdf pages/`
 5. `qpdf --decrypt land-registry.pdf registry.pdf`
 6. `pdftk registry.pdf burst`
+7. `rm registry.pdf`
+8. `ls -1 * .pdf > manifest.txt`
+9. `loop.sh manifest.txt |prarlle -j+8 --no-notice pdftotext -layout {} {}.txt`
